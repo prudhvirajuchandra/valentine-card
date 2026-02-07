@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine 💕</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ffd6e8, #ffeef5);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      width: 320px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 120px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    button {
+      border: none;
+      padding: 10px 22px;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .yes {
+      background: #ff4d6d;
+      color: white;
+    }
+
+    .yes:hover {
+      background: #ff1f4a;
+    }
+
+    .no {
+      background: #ddd;
+    }
+
+    .no:hover {
+      transform: translateX(20px);
+    }
+
+    .message {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #ff4d6d;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="https://i.imgur.com/8Km9tLL.png" alt="Cute Penguin">
+    <h2>Varam, will you be my Valentine? 💘</h2>
+
+    <div class="buttons">
+      <button class="yes" onclick="sayYes()">Yes</button>
+      <button class="no">No</button>
+    </div>
+
+    <div class="message" id="message">
+      Yaaay! 💖 You just made my day 🥰
+    </div>
+  </div>
+
+  <script>
+    function sayYes() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
